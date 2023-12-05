@@ -12,7 +12,7 @@ function renameDirectory(oldName, newName) {
 }
 
 const oldName = './build';
-const newName = './doc';
+const newName = './docs';
 
 renameDirectory(oldName, newName);
 
