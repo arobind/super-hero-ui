@@ -18,7 +18,7 @@
     "build": "react-scripts build --openssl-legacy-provider",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildPage": "rm -rf ./docs && npm run build && node buildScript.js"
+    "buildPage": "rm -rf ./docs && npm run build && node renameScript.js"
   },
   "eslintConfig": {
     "extends": "react-app"

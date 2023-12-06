@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/superheroportal/static/css/main.4cfacb93.css",
-    "main.js": "/superheroportal/static/js/main.255507d1.js",
-    "static/media/background.jpg": "/superheroportal/static/media/background.d8600537c1643f5ab411.jpg",
-    "index.html": "/superheroportal/index.html",
-    "main.4cfacb93.css.map": "/superheroportal/static/css/main.4cfacb93.css.map",
-    "main.255507d1.js.map": "/superheroportal/static/js/main.255507d1.js.map"
+    "main.css": "./static/css/main.91c670ae.css",
+    "main.js": "./static/js/main.255507d1.js",
+    "static/media/background.jpg": "./static/media/background.d8600537c1643f5ab411.jpg",
+    "index.html": "./index.html",
+    "main.91c670ae.css.map": "./static/css/main.91c670ae.css.map",
+    "main.255507d1.js.map": "./static/js/main.255507d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cfacb93.css",
+    "static/css/main.91c670ae.css",
     "static/js/main.255507d1.js"
   ]
 }
