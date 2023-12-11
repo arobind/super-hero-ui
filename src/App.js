@@ -3,7 +3,7 @@ import './App.css';
 import HeroSearch from './HeroSearch.jsx';
 import HeroNav from './HeroNav.jsx';
 import HeroDetails from './HeroDetails';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function MainApp() {
   return(<div className="App">
