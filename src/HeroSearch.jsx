@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSearch() {
 
@@ -64,7 +64,7 @@ export default function HeroSearch() {
             <div className="container">
                 {   heroList.map(hero => {
                     return (
-                        <Card hero={hero} />
+                        <Card hero={hero} key={hero.id}/>
                     )
                 })}
             </div>
@@ -73,13 +73,23 @@ export default function HeroSearch() {
 }
 
 function Card(props) {
+    const navigate = useNavigate();
+
+    function clickHandler(e){   
+
+        console.log(props.hero.id)
+        navigate("/heroName", {state:{id: props.hero.id}});
+        
+          
+
+    }
 
     return (
         <div className="card" style={{ "width": "18rem" }}>
             <img className="card-img-top" style={{ "width": "80%", "height": "80%" }} src={props.hero.image.url} alt={props.hero.name} />
             <div className="card-body">
                 <h4 className="card-title">{props.hero.name}</h4>
-                <a href="#" className="btn btn-danger card-btn">Know More</a>
+                <button onClick={clickHandler} className="btn btn-danger card-btn">Know More</button>
             </div>
         </div>)
 
