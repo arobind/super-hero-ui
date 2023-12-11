@@ -1,9 +1,0 @@
-TO DO LIST BY GREAT SRIRAM
---------------------------
-- Search string should be centered
-- use prop children and card wrapper class
-- make search button a la know more button
-- add loader    
-ADVANCED
-- Pagination/Infinite scroll
-- Debounce

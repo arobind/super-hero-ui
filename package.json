@@ -10,18 +10,24 @@
     "axios": "^1.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0 ",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "react-router": "^6.20.1",
+    "react-router-dom": "^6.20.1"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build --openssl-legacy-provider",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildPage": "rm -rf ./docs && npm run build && node renameScript.js"
+    "buildPage": "rm -rf ./docs && npm run build && node renameScript.js",
+    "lint": "eslint **/*.js"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": ["react-app"],
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["off", "double"]
+    }
   },
   "browserslist": {
     "production": [
